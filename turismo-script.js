@@ -5,17 +5,24 @@ const translations = languages;
 
 document.addEventListener('DOMContentLoaded', () => {
     // Language toggle setup
-    const langToggle = document.getElementById('lang-toggle');
+    const langToggles = document.querySelectorAll('.lang-toggle, #lang-toggle');
     let currentLang = localStorage.getItem('lang') || 'es'; // load persisted language
-    // Update button label according to current language
-    if (langToggle) {
-        langToggle.textContent = currentLang === 'es' ? 'Eng' : 'ES';
-        langToggle.addEventListener('click', () => {
+
+    const applyTranslations = (lang) => {
+        const dict = translations[lang];
+        for (const selector in dict) {
+            document.querySelectorAll(selector).forEach(el => {
+                el.textContent = dict[selector];
+            });
+        }
+    };
+
+    langToggles.forEach(btn => {
+        btn.addEventListener('click', () => {
             currentLang = currentLang === 'es' ? 'en' : 'es';
             localStorage.setItem('lang', currentLang);
             applyTranslations(currentLang);
-            // Update button label after toggle
-            // langToggle.textContent = currentLang === 'es' ? '' : 'ES';
+
             // Refresh tour details on detail page if applicable
             const detailParams = new URLSearchParams(window.location.search);
             const detailTourId = detailParams.get('tour');
@@ -23,22 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 populateTourDetails(detailTourId);
             }
         });
-    }
-    // Removed duplicate definition; currentLang is defined earlier with persisted value
+    });
 
-    const applyTranslations = (lang) => {
-        const dict = translations[lang];
-        for (const selector in dict) {
-            const el = document.querySelector(selector);
-            if (el) {
-                el.textContent = dict[selector];
-            }
-        }
-    };
     // Initial apply
     applyTranslations(currentLang);
-
-
 
     // 1. Efecto Scroll en Navbar
     const header = document.querySelector('.turismo-header');
@@ -55,6 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
 
     if (menuToggle && navLinks) {
+        const closeMobileMenu = () => {
+            navLinks.classList.remove('mobile-active');
+            const spans = menuToggle.querySelectorAll('span');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        };
+
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('mobile-active');
 
@@ -63,6 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
             spans[0].style.transform = navLinks.classList.contains('mobile-active') ? 'rotate(45deg) translate(5px, 5px)' : 'none';
             spans[1].style.opacity = navLinks.classList.contains('mobile-active') ? '0' : '1';
             spans[2].style.transform = navLinks.classList.contains('mobile-active') ? 'rotate(-45deg) translate(6px, -6px)' : 'none';
+        });
+
+        // Close mobile menu when clicking any link inside
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
         });
     }
 

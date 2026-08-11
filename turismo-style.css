@@ -210,6 +210,10 @@ a {
     width: 100%;
 }
 
+.mobile-lang-item {
+    display: none;
+}
+
 .nav-cta {
     display: flex;
     align-items: center;
@@ -997,6 +1001,20 @@ a {
 
     .nav-cta {
         display: none;
+    }
+
+    .mobile-lang-item {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .mobile-lang-item .lang-toggle {
+        width: 100%;
+        padding: 12px 20px;
+        margin-left: 0 !important;
+        text-align: center;
+        justify-content: center;
     }
 
     .destinations-grid,

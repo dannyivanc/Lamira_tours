@@ -1,5 +1,6 @@
 const navEs = {
     '#lang-toggle': 'English',
+    '.lang-toggle': 'English',
     '#nav-home': 'Inicio',
     '#nav-tours': 'Tours',
     '#nav-about': 'Nosotros',
@@ -7,6 +8,7 @@ const navEs = {
 }
 const navEn = {
     '#lang-toggle': 'Español',
+    '.lang-toggle': 'Español',
     '#nav-home': 'Home',
     '#nav-tours': 'Tours',
     '#nav-about': 'About',
