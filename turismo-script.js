@@ -170,11 +170,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, {
-            threshold: 0.15,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.05,
+            rootMargin: '0px 0px 50px 0px'
         });
 
-        revealElements.forEach(el => observer.observe(el));
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                el.classList.add('active');
+            } else {
+                observer.observe(el);
+            }
+        });
     } else {
         // Fallback si no está soportado
         revealElements.forEach(el => el.classList.add('active'));
@@ -589,15 +596,21 @@ document.addEventListener('DOMContentLoaded', () => {
 let next = document.querySelector(".next");
 let prev = document.querySelector(".prev");
 
-next.addEventListener("click", function () {
-    let items = document.querySelectorAll(".item");
-    document.querySelector(".slide").appendChild(items[0]);
-});
+if (next && prev && document.querySelector(".slide")) {
+    next.addEventListener("click", function () {
+        let items = document.querySelectorAll(".item");
+        if (items.length > 0) {
+            document.querySelector(".slide").appendChild(items[0]);
+        }
+    });
 
-prev.addEventListener("click", function () {
-    let items = document.querySelectorAll(".item");
-    document.querySelector(".slide").prepend(items[items.length - 1]);
-});
+    prev.addEventListener("click", function () {
+        let items = document.querySelectorAll(".item");
+        if (items.length > 0) {
+            document.querySelector(".slide").prepend(items[items.length - 1]);
+        }
+    });
+}
 
 
 

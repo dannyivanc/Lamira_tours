@@ -405,6 +405,15 @@ a {
     flex-direction: column;
 }
 
+.destination-card > a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
 .destination-card:hover {
     transform: translateY(-10px);
     border-color: rgba(79, 70, 229, 0.3);
