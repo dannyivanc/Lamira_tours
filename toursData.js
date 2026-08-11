@@ -288,8 +288,8 @@ export const toursData = {
         durationEn: '2 Days / 1 Night',
         type: 'Privado',
         typeEn: 'Private',
-        groupSize: 'Máximo 6 personas',
-        groupSizeEn: 'Maximum 6 people',
+        groupSize: 'Máximo 4 personas',
+        groupSizeEn: 'Maximum 4 people',
         languages: 'Español (Inglés disponible)',
         languagesEn: 'Spanish (English available)',
         bannerImage: basePath + 'assets/images/tours/salar.jpeg',
@@ -525,8 +525,8 @@ export const toursData = {
         durationEn: '3 Days / 2 Nights',
         type: 'Privado',
         typeEn: 'Private',
-        groupSize: 'Máximo 6 personas',
-        groupSizeEn: 'Maximum 6 people',
+        groupSize: 'Máximo 4 personas',
+        groupSizeEn: 'Maximum 4 people',
         languages: 'Español (Inglés disponible)',
         languagesEn: 'Spanish (English available)',
         bannerImage: basePath + 'assets/images/tours/desiertos-priv.jpeg',
@@ -547,16 +547,16 @@ export const toursData = {
             'Transporte en vehículo 4x4 adaptado para desierto y caminos de tierra',
             'Conductor / guía local en español, Guia en ingles con costo adicional',
             'Botiquín de primeros auxilios y tubo de oxígeno',
-            'Noche 1: Agencha, con opciones de habitaciones de 2/3/4/5/6 camas, cada una equipada con baño privado.',
-            'Noche 2: Huayllajara con una habitación compartida de 6 camas (con los miembros del mismo grupo de jeep) y un baño compartido.'
+            'Noche 1: San Juan, con opción a habitaciones privadas, cada una equipada con baño privado.',
+            'Noche 2: Huayllajara, con opción a habitaciones privadas, cada una equipada con baño privado.'
         ],
         includedEn: [
             'All meals (breakfast, lunch, and dinner) with vegetarian option',
             'Transportation in 4x4 vehicle adapted for desert and dirt roads',
             'Driver / local guide in Spanish, English guide for an additional cost',
             'First aid kit and oxygen tank',
-            'Night 1: Agencha, with options for 2/3/4/5/6 bed rooms, each equipped with private bathroom.',
-            'Night 2: Huayllajara with a shared 6-bed room (with members of the same jeep group) and a shared bathroom.'
+            'Night 1: San Juan, with option to private rooms, each equipped with private bathroom.',
+            'Night 2: Huayllajara, with option to private rooms, each equipped with private bathroom.'
         ],
         excluded: [
             'Entrada a la Reserva Eduardo Avaroa (150 Bs)',
@@ -849,16 +849,16 @@ export const toursData = {
             'Transporte en vehículo 4x4 adaptado para desierto y caminos de tierra',
             'Conductor / guía local en español, Guia en ingles con costo adicional',
             'Botiquín de primeros auxilios y tubo de oxígeno',
-            'Noche 1: Agencha, con opciones de habitaciones de 2/3/4/5/6 camas, cada una equipada con baño privado.',
-            'Noche 2: Huayllajara con una habitación compartida de 6 camas (con los miembros del mismo grupo de jeep) y un baño compartido.'
+            'Noche 1: San Juan, con opciones de habitaciones compartidas de 2/3/4/5/6 camas, con baño compartido.',
+            'Noche 2: Huayllajara con opciones de habitaciones compartidas de 2/3/4/5/6 camas, con baño compartido.'
         ],
         includedEn: [
             'All meals (breakfast, lunch, and dinner) with vegetarian option',
             'Transportation in 4x4 vehicle adapted for desert and dirt roads',
             'Driver / local guide in Spanish, English guide for an additional cost',
             'First aid kit and oxygen tank',
-            'Night 1: Agencha, with options for 2/3/4/5/6 bed rooms, each equipped with private bathroom.',
-            'Night 2: Huayllajara with a shared 6-bed room (with members of the same jeep group) and a shared bathroom.'
+            'Night 1: San Juan, with options for 2/3/4/5/6 bed rooms, each equipped with private bathroom.',
+            'Night 2: Huayllajara, with options for 2/3/4/5/6 bed rooms, each equipped with private bathroom.'
         ],
         excluded: [
             'Entrada a la Reserva Eduardo Avaroa (150 Bs)',
@@ -1129,8 +1129,8 @@ export const toursData = {
         durationEn: '3 Days / 2 Nights',
         type: 'Privado',
         typeEn: 'Private',
-        groupSize: 'Máximo 6 personas',
-        groupSizeEn: 'Maximum 6 people',
+        groupSize: 'Máximo 4 personas',
+        groupSizeEn: 'Maximum 4 people',
         languages: 'Español (Inglés disponible)',
         languagesEn: 'Spanish (English available)',
         bannerImage: basePath + 'assets/images/tours/sanpedro.jpeg',
@@ -1151,16 +1151,16 @@ export const toursData = {
             'Transporte en vehículo 4x4 adaptado para desierto y caminos de tierra',
             'Conductor / guía local en español, Guia en ingles con costo adicional',
             'Botiquín de primeros auxilios y tubo de oxígeno',
-            'Noche 1: Agencha, con opciones de habitaciones de 2/3/4/5/6 camas, cada una equipada con baño privado.',
-            'Noche 2: Huayllajara con una habitación compartida de 6 camas (con los miembros del mismo grupo de jeep) y un baño compartido.'
+            'Noche 1: Villa Mar, con opción a habitaciones privadas, cada una equipada con baño privado.',
+            'Noche 2: Hotel de sal, con opción a habitaciones privadas, cada una equipada con baño privado.'
         ],
         includedEn: [
             'All meals (breakfast, lunch, and dinner) with vegetarian option',
             'Transportation in 4x4 vehicle adapted for desert and dirt roads',
             'Driver / local guide in Spanish, English guide for an additional cost',
             'First aid kit and oxygen tank',
-            'Night 1: Agencha, with options for 2/3/4/5/6 bed rooms, each equipped with private bathroom.',
-            'Night 2: Huayllajara with a shared 6-bed room (with members of the same jeep group) and a shared bathroom.'
+            'Night 1: Villa Mar, with options for 2/3/4/5/6 bed rooms, each equipped with private bathroom.',
+            'Night 2: Salt hotel, with options for 2/3/4/5/6 bed rooms, each equipped with private bathroom.'
         ],
         excluded: [
             'Entrada a la Reserva Eduardo Avaroa (150 Bs)',
@@ -1473,8 +1473,8 @@ export const toursData = {
         durationEn: '1 Night',
         type: 'Privado',
         typeEn: 'Private',
-        groupSize: 'Máximo 6 personas',
-        groupSizeEn: 'Maximum 6 people',
+        groupSize: 'Máximo 4 personas',
+        groupSizeEn: 'Maximum 4 people',
         languages: 'Español (Inglés disponible)',
         languagesEn: 'Spanish (English available)',
         bannerImage: basePath + 'assets/images/tours/estrellas.jpeg',
@@ -1600,8 +1600,8 @@ export const toursData = {
         durationEn: 'Sunrise',
         type: 'Privado',
         typeEn: 'Private',
-        groupSize: 'Maximo 6 personas',
-        groupSizeEn: 'Maximum 6 people',
+        groupSize: 'Maximo 4 personas',
+        groupSizeEn: 'Maximum 4 people',
         languages: 'Español (Inglés disponible)',
         languagesEn: 'Spanish (English available)',
         bannerImage: basePath + 'assets/images/tours/amanecer.jpeg',
