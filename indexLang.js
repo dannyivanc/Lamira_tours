@@ -314,7 +314,7 @@ const footerEs = {
     '#footer-about': 'Creamos experiencias únicas diseñadas para convertir cada viaje en recuerdos inolvidables para toda',
     '#footer-social-title': 'Redes Sociales',
     '#footer-contact-title': 'Contactanos',
-    '#footer-address': 'Av. Ferroviaria entre calle Bolivar y avaroa, Uyuni, Potosí, Bolivia',
+    '#footer-address': 'Av. Ferroviaria entre calle Bolivar y Arce, Uyuni, Potosí, Bolivia',
     '#footer-copyright': '© 2026 Lamira Tours. Todos los derechos reservados.',
     '#footer-dev-info': 'Desarrollado por'
 }
@@ -323,7 +323,7 @@ const footerEn = {
     '#footer-about': 'We create unique experiences designed to turn every trip into unforgettable memories for a lifetime.',
     '#footer-social-title': 'Social Networks',
     '#footer-contact-title': 'Contact Us',
-    '#footer-address': 'Ferroviaria Avenue between Bolivar and Avaroa streets, Uyuni, Potosí, Bolivia',
+    '#footer-address': 'Ferroviaria Avenue between Bolivar and Arce streets, Uyuni, Potosí, Bolivia',
     '#footer-copyright': '© 2026 Lamira Tours. All rights reserved.',
     '#footer-dev-info': 'Developed by'
 }
