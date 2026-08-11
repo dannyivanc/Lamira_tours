@@ -649,17 +649,18 @@ a {
 .testimonial-slide {
     min-width: 100%;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 0px 10px;
 }
 
 .testimonial-card {
     background: rgba(15, 22, 42, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-glass);
-    padding: 40px;
+    padding: 30px;
     border-radius: var(--radius-lg);
     text-align: center;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .quote-icon {
@@ -676,9 +677,9 @@ a {
 }
 
 .testimonial-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--text-main);
     line-height: 1.8;
 }

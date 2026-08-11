@@ -296,14 +296,14 @@ const testimonials_5_En = {
     '#t5-img': 'JP',
 }
 const testimonials_6_Es = {
-    '#t6-text': 'El Salar de Uyuni superó todo lo que habíamos imaginado. Amanecer en medio del desierto blanco, con el cielo reflejado en el agua, fue mágico. El guía local nos llevó a los rincones más fotogénicos y nos explicó la historia de las salinas. ',
+    '#t6-text': 'El Salar de Uyuni superó todo lo que habíamos imaginado. Amanecer en medio del desierto blanco, con el cielo reflejado en el agua, fue mágico.',
     '#t6-name': 'Klaus Weber',
     '#t6-role': 'Tour de 3 dias en junio 2026',
     '#t6-img': 'KW',
 }
 
 const testimonials_6_En = {
-    '#t6-text': 'The Uyuni Salt Flats exceeded everything we had imagined. Sunrise in the middle of the white desert, with the sky reflected in the water, was magical. The local guide took us to the most photogenic spots and explained the history of the salt flats.',
+    '#t6-text': 'The Uyuni Salt Flats exceeded everything we had imagined. Sunrise in the middle of the white desert, with the sky reflected in the water, was magical.',
     '#t6-name': 'Klaus Weber',
     '#t6-role': 'Tour of 3 days in June 2026',
     '#t6-img': 'KW',
