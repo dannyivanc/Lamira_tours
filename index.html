@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamira Tours</title>
+
+    <meta name="description" content="Lamira Tours">
+    <link rel="stylesheet" href="turismo-style.css">
+    <link rel="icon" href="./assets/images/logo.svg" type="image/x-icon">
+</head>
+
+<body class="turismo-template-body">
+
+    <!-- Cabecera / Navbar -->
+    <header class="turismo-header">
+        <div class="turismo-container nav-container">
+            <a href="#" class="logo" id="main-logo">
+                <img src="./assets/images/logo.svg" class="logo_img" alt="">
+                Lamira Tours
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a id="nav-home" href="#inicio" class="active">Inicio</a></li>
+                    <li><a id="nav-tours" href="#destinos">Tours</a></li>
+                    <li><a id="nav-about" href="#nosotros">Nosotros</a></li>
+                    <li><a id="nav-contact" href="#galeria">Galeria</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <button id="lang-toggle" class="btn-secondary" style="margin-left:12px;">Ingles</button>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <div class="turismo-container">
+            <div class="hero-content">
+                <span id="home-badge" class="hero-badge">Explora con Nosotros El Magestuoso Salar</span>
+                <h1 id="home-title" class="hero-title">Disfruta de una magica aventura</h1>
+                <p id="home-desc" class="hero-desc">Descubre un lugar magico, una gran aventura. Nos encargamos de cada
+                    detalle para que tu única preocupación sea disfrutar de momentos mágicos.</p>
+                <div class="hero-actions">
+                    <a id="home-cta" href="#destinos" class="btn-premium btn-primary">Ver Tours</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Tours -->
+    <section id="destinos" class="section-padding reveal">
+        <div class="turismo-container">
+            <div class="section-header">
+                <!-- <span class="section-badge">Nuestras Ofertas</span> -->
+                <h2 id="tours-title" class="section-title">Nuestas ofertas</h2>
+                <p id="tours-desc" class="section-desc">Experiencias inolvidables</p>
+            </div>
+
+            <div class="destinations-grid">
+                <!-- 1: 1 dia privado -->
+
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-1-dia-privado">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/salar1.jpeg" alt="Salar de Uyuni Privado 1 Dia">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-1-private-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    1 Dia
+                                </span>
+                            </div>
+                            <h3 id="uyuni-1-private-title" class="dest-title">Salar de Uyuni Privado</h3>
+                            <p id="uyuni-1-private-desc" class="dest-text">Si tienes poco tiempo, pero no quieres
+                                perderte
+                                la magia del
+                                Salar de Uyuni, este tour de un día es para ti. Cementerio de Trenes, Colchani, Isla
+                                Incahuasi y un atardecer
+                                mágico con brindis incluido.</p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-1-private-price-lbl" class="price-lbl">precio</span>
+                                    <span id="uyuni-1-private-price-val" class="price-val">900 Bs</span>
+                                </div>
+                                <a id="uyuni-1-private-cta" href="tour.html?tour=uyuni-1-dia-privado"
+                                    class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <!-- 2: 1 dia compartido -->
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-1-dia">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/incahuasi.jpeg" alt="Salar de Uyuni Clásico 1 Día">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-1-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    1 Día
+                                </span>
+                            </div>
+                            <h3 id="uyuni-1-title" class="dest-title">Salar de Uyuni Clásico</h3>
+                            <p id="uyuni-1-desc" class="dest-text">Recorre el imponente Salar de Uyuni, visitando el
+                                Cementerio de Trenes,
+                                los
+                                ojos de sal, el hotel de sal y la mágica Isla Incahuasi al atardecer.</p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-1-price-lbl" class="price-lbl">Desde</span>
+                                    <span id="uyuni-1-price-val" class="price-val">200 Bs</span>
+                                </div>
+                                <a id="uyuni-1-cta" href="tour.html?tour=uyuni-1-dia" class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- 3: 2 dias   epoca de lluvia privado-->
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-2-dias-privado">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/salar.jpeg" alt="Salar de Uyuni 2 Días 1 Noche">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-2-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    2 Días / 1 Noche
+                                </span>
+                            </div>
+                            <h3 id="uyuni-2-title" class="dest-title">Salar de Uyuni y Lagunas</h3>
+                            <p id="uyuni-2-desc" class="dest-text">Explora el Salar, duerme en un hotel de sal real y
+                                continúa al segundo
+                                día
+                                hacia el Valle de Rocas y la Laguna Katal con paisajes inolvidables.</p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-2-price-lbl" class="price-lbl">Desde</span>
+                                    <span id="uyuni-2-price-val" class="price-val">600 Bs</span>
+                                </div>
+                                <a id="uyuni-2-cta" href="tour.html?tour=uyuni-2-dias-privado"
+                                    class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+
+                </article>
+
+                <!-- 4: 3 dias   epoca de lluvia privado-->
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-3-dia-privado">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/desiertos-priv.jpeg" alt="Salar de Uyuni Privado 3 Dia">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-3-private-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    1 Dia
+                                </span>
+                            </div>
+                            <h3 id="uyuni-3-private-title" class="dest-title">Salar de Uyuni Privado</h3>
+                            <p id="uyuni-3-private-desc" class="dest-text">Si tienes poco tiempo, pero no quieres
+                                perderte
+                                la magia del
+                                Salar de Uyuni, este tour de un día es para ti. Cementerio de Trenes, Colchani, Isla
+                                Incahuasi y un atardecer
+                                mágico con brindis incluido.</p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-3-private-price-lbl" class="price-lbl">Desde</span>
+                                    <span id="uyuni-3-private-price-val" class="price-val">900 Bs</span>
+                                </div>
+                                <a id="uyuni-3-private-cta" href="tour.html?tour=uyuni-3-dia-privado"
+                                    class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <!-- 5: 3 dias compartido-->
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-3-dias">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/desiertos-comp.jpeg"
+                                alt="Salar de Uyuni y Lagunas de Colores 3 Días">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-3-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    3 Días / 2 Noches
+                                </span>
+                            </div>
+                            <h3 id="uyuni-3-title" class="dest-title">Expedición Laguna Colorada</h3>
+                            <p id="uyuni-3-desc" class="dest-text">La aventura altiplánica más completa: Salar de Uyuni,
+                                Isla Incahuasi,
+                                Laguna Colorada y Verde, géiseres, aguas termales y fauna andina.</p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-3-price-lbl" class="price-lbl">Desde</span>
+                                    <span id="uyuni-3-price-val" class="price-val">900 Bs</span>
+                                </div>
+                                <a id="uyuni-3-cta" href="tour.html?tour=uyuni-3-dias" class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <!--6: Salar de Uyuni desde San Pedro de Atacama  -->
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-san-pedro-3-dias">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/sanpedro.jpeg"
+                                alt="Salar de Uyuni y Lagunas de Colores 3 Días desde San Pedro de Atacama">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-san-pedro-3-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    3 Días / 2 Noches
+                                </span>
+                            </div>
+                            <h3 id="uyuni-san-pedro-3-title" class="dest-title">Salar de Uyuni desde San Pedro de
+                                Atacama
+                            </h3>
+                            <p id="uyuni-san-pedro-3-desc" class="dest-text">Explora el Salar de Uyuni saliendo desde
+                                San
+                                Pedro de
+                                Atacama. Cruza la frontera y vive la experiencia única de caminar sobre el salar,
+                                visitar la Isla Incahuasi y maravillarte con las lagunas de colores.
+                            </p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-san-pedro-3-price-lbl" class="price-lbl">Desde</span>
+                                    <span id="uyuni-san-pedro-3-price-val" class="price-val">900 Bs</span>
+                                </div>
+                                <a id="uyuni-san-pedro-3-cta" href="tour.html?tour=uyuni-san-pedro-3-dias"
+                                    class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!--7: Tour estrellas  -->
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-estrellas">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/estrellas.jpeg" alt="Tour Estrellas Uyuni">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-estrellas-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    3 Días / 2 Noches
+                                </span>
+                            </div>
+                            <h3 id="uyuni-estrellas-title" class="dest-title">Tour Estrellas Uyuni
+                            </h3>
+                            <p id="uyuni-estrellas-desc" class="dest-text">Disfruta de una experiencia única de
+                                tour
+                                de estrellas en el Salar de Uyuni, el mejor lugar del mundo para contemplar el
+                                cielo
+                                nocturno.
+                            </p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-estrellas-price-lbl" class="price-lbl">Desde</span>
+                                    <span id="uyuni-estrellas-price-val" class="price-val">900 Bs</span>
+                                </div>
+                                <a id="uyuni-estrellas-cta" href="tour.html?tour=uyuni-estrellas"
+                                    class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!--8: Tour amanecer  -->
+                <article class="destination-card">
+                    <a href="tour.html?tour=uyuni-amanecer">
+                        <div class="dest-img-container">
+                            <img src="assets/images/tours/amanecer.jpeg" alt="Tour Amanecer Uyuni">
+                        </div>
+                        <div class="dest-content">
+                            <div class="dest-meta">
+                                <span id="uyuni-amanecer-duration">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                        <line x1="16" x2="16" y1="2" y2="6" />
+                                        <line x1="8" x2="8" y1="2" y2="6" />
+                                        <line x1="3" x2="21" y1="10" y2="10" />
+                                    </svg>
+                                    3 Días / 2 Noches
+                                </span>
+                            </div>
+                            <h3 id="uyuni-amanecer-title" class="dest-title">Tour Amanecer Uyuni
+                            </h3>
+                            <p id="uyuni-amanecer-desc" class="dest-text">Disfruta de una experiencia única de
+                                tour
+                                de amanecer en el Salar de Uyuni, el mejor lugar del mundo para contemplar el
+                                cielo
+                                nocturno.
+                            </p>
+                            <div class="dest-footer">
+                                <div class="dest-price">
+                                    <span id="uyuni-amanecer-price-lbl" class="price-lbl">Desde</span>
+                                    <span id="uyuni-amanecer-price-val" class="price-val">900 Bs</span>
+                                </div>
+                                <a id="uyuni-amanecer-cta" href="tour.html?tour=uyuni-amanecer"
+                                    class="btn-premium btn-primary"
+                                    style="padding: 8px 16px; font-size: 0.85rem; text-decoration: none;">Ver
+                                    Detalles</a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección ¿Por qué nosotros? -->
+    <section id="nosotros" class="section-padding reveal" style="background: rgba(15, 22, 42, 0.3)">
+        <div class="turismo-container">
+            <div class="section-header">
+                <span id="about-badge" class="section-badge">Nuestro compromiso</span>
+                <h2 id="about-title" class="section-title">¿Por qué elegir a Lamira Tours?</h2>
+                <p id="about-desc" class="section-desc">Nos esmeramos por crear aventuras perfectas y seguras,
+                    respaldadas por un
+                    estándar de servicio impecable.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Beneficio 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                            <line x1="9" x2="9" y1="3" y2="18" />
+                            <line x1="15" x2="15" y1="6" y2="21" />
+                        </svg>
+                    </div>
+                    <h3 id="about-feature-1-title" class="feature-title">Guías Expertos</h3>
+                    <p id="about-feature-1-desc" class="feature-desc">Viajes dirigidos por guías locales bilingües
+                        certificados que te revelarán
+                        la historia oculta de cada rincón.</p>
+                </div>
+
+
+                <!-- Beneficio 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <line x1="12" x2="12" y1="17" y2="17" />
+                        </svg>
+                    </div>
+                    <h3 id="about-feature-2-title" class="feature-title">Soporte de primer nivel</h3>
+                    <p id="about-feature-2-desc" class="feature-desc">Estamos disponibles 24/7 para cambios de última
+                        hora, reservas imprevistas
+                        de restaurantes o atención en emergencias.</p>
+                </div>
+
+
+                <!-- Beneficio 3 -->
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 id="about-feature-3-title" class="feature-title">Seguridad Total</h3>
+                    <p id="about-feature-3-desc" class="feature-desc">Viaja con tranquilidad. Todos nuestros tours
+                        cuentan con cobertura y
+                        proveedores certificados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel -->
+    <section id="galeria" class="section-padding reveal">
+        <div class="section-header ">
+            <span id="galery-badge" class="section-badge">Galeria</span>
+            <h2 id="galery-title" class="section-title">Galería de nuestros tours</h2>
+            <p id="galery-desc" class="section-desc">Un vistazo a las experiencias inolvidables que han vivido nuestros
+                viajeros.</p>
+        </div>
+        <div>
+            <div class="carrusel-wrapper">
+                <!-- VENTANA -->
+                <div class="carrusel-viewport">
+                    <div class="carrusel-track" id="carruselTrack">
+                        <div class="carrusel-slide slide-1">
+                            <img src="./assets/images/tours/amanecer.jpeg" alt="Amanecer">
+                        </div>
+                        <div class="carrusel-slide slide-2">
+                            <img src="./assets/images/tours/desiertos-comp.jpeg" alt="Desiertos">
+                        </div>
+                        <div class="carrusel-slide slide-3">
+                            <img src="./assets/images/tours/desiertos-priv.jpeg" alt="Laguna">
+                        </div>
+                        <div class="carrusel-slide slide-4">
+                            <img src="./assets/images/tours/estrellas.jpeg" alt="Salar de Uyuni">
+                        </div>
+                        <div class="carrusel-slide slide-5">
+                            <img src="./assets/images/tours/incahuasi.jpeg" alt="Termas de Colores">
+                        </div>
+                        <div class="carrusel-slide slide-6">
+                            <img src="./assets/images/tours/salar.jpeg" alt="Termas de Colores">
+                        </div>
+                        <div class="carrusel-slide slide-6">
+                            <img src="./assets/images/tours/salar1.jpeg" alt="Termas de Colores">
+                        </div>
+                        <div class="carrusel-slide slide-6">
+                            <img src="./assets/images/tours/sanpedro.jpeg" alt="Termas de Colores">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INDICADORES (puntos) -->
+                <div class="carrusel-indicators" id="indicatorsContainer">
+                    <!-- los puntos se generan con JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonios (Slider) -->
+    <section id="testimonios" class="section-padding reveal" style="background: rgba(15, 22, 42, 0.3)">
+        <div class="turismo-container">
+            <div class="section-header">
+                <span id="slider-badge" class="section-badge">Opiniones</span>
+                <h2 id="slider-title" class="section-title">Lo que dicen nuestros clientes</h2>
+                <p id="slider-desc" class="section-desc">Nuestra mayor recompensa es saber que superamos las
+                    expectativas de nuestros
+                    aventureros.</p>
+            </div>
+
+            <div class="testimonials-wrapper">
+                <div class="testimonials-track">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p id="t1-text" class="testimonial-text">"El viaje al salar superó todo lo que
+                                imaginábamos.
+                                El tour
+                                estaba diseñado al detalle, el guía nos mostró lugares unicos. ¡Una experiencia de
+                                10!"
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar"
+                                    style="display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: var(--primary)">
+                                    <span id="t1-img">SM</span>
+                                </div>
+                                <div class="user-info">
+                                    <h4 id="t1-name" class="user-name">Sofía Martínez</h4>
+                                    <p id="t1-role" class="user-role">Tour de 3 dias en 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p id="t2-text" class="testimonial-text">"El viaje al salar superó todo lo que
+                                imaginábamos.
+                                El tour
+                                estaba diseñado al detalle, el guía nos mostró lugares unicos. ¡Una experiencia de
+                                10!"
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar"
+                                    style="display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: var(--primary)">
+                                    <span id="t2-img">SM</span>
+                                </div>
+                                <div class="user-info">
+                                    <h4 id="t2-name" class="user-name">Sofía Martínez</h4>
+                                    <p id="t2-role" class="user-role">Tour de 3 dias en 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p id="t3-text" class="testimonial-text">"El viaje al salar superó todo lo que
+                                imaginábamos.
+                                El tour
+                                estaba diseñado al detalle, el guía nos mostró lugares unicos. ¡Una experiencia de
+                                10!"
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar"
+                                    style="display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: var(--primary)">
+                                    <span id="t3-img">SM</span>
+                                </div>
+                                <div class="user-info">
+                                    <h4 id="t3-name" class="user-name">Sofía Martínez</h4>
+                                    <p id="t3-role" class="user-role">Tour de 3 dias en 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p id="t4-text" class="testimonial-text">"El viaje al salar superó todo lo que
+                                imaginábamos.
+                                El tour
+                                estaba diseñado al detalle, el guía nos mostró lugares unicos. ¡Una experiencia de
+                                10!"
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar"
+                                    style="display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: var(--primary)">
+                                    <span id="t4-img">CS</span>
+                                </div>
+                                <div class="user-info">
+                                    <h4 id="t4-name" class="user-name">Carla Suarez</h4>
+                                    <p id="t4-role" class="user-role">Tour de 3 dias en 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p id="t5-text" class="testimonial-text">"El viaje al salar superó todo lo que
+                                imaginábamos.
+                                El tour
+                                estaba diseñado al detalle, el guía nos mostró lugares unicos. ¡Una experiencia de
+                                10!"
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar"
+                                    style="display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: var(--primary)">
+                                    <span id="t5-img">MR</span>
+                                </div>
+                                <div class="user-info">
+                                    <h4 id="t5-name" class="user-name">Mateo Rojas</h4>
+                                    <p id="t5-role" class="user-role">Tour de 3 dias en 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 6 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"></div>
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p id="t6-text" class="testimonial-text">"El viaje al salar superó todo lo que
+                                imaginábamos.
+                                El tour
+                                estaba diseñado al detalle, el guía nos mostró lugares unicos. ¡Una experiencia de
+                                10!"
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar"
+                                    style="display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: var(--primary)">
+                                    <span id="t6-img">CC</span>
+                                </div>
+                                <div class="user-info">
+                                    <h4 id="t6-name" class="user-name">Cristian Castro</h4>
+                                    <p id="t6-role" class="user-role">Tour de 3 dias en 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" aria-label="Anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m15 18-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-arrow next" aria-label="Siguiente">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- boton de whasa -->
+    <a href="https://wa.me/59163722016?text=Hola%21%20me%20interesa%20el%20tour%20" class="whatsapp-float"
+        target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+
+        <!-- Tooltip -->
+        <span class="tooltip">¡Contactanos por WhatsApp!</span>
+
+        <!-- Icono SVG de WhatsApp -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+
+    <!-- Footer -->
+    <footer class="turismo-footer">
+        <div class="turismo-container footer-grid">
+            <div class="footer-logo-desc">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" class="logo_img" alt="Lamira Tours Logo">
+                    Lamira Tours
+                </a>
+                <p id="footer-about">Creamos experiencias únicas diseñadas para convertir cada viaje en recuerdos
+                    inolvidables para toda
+                    la vida.</p>
+            </div>
+            <div class="footer-col">
+                <h4 id="footer-ubicacion-title">Ubicación</h4>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d392.9097048207831!2d-66.82423161359725!3d-20.464859168374407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1786143218829!5m2!1ses!2sbo"
+                        width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- <a href="#" class="social-btn" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 id="footer-contact-title">Contactanos</h4>
+                <ul>
+                    <li style="color: var(--text-muted); font-size: 0.95rem;">lamiratoursoficial1@gmail.com</li>
+                    <li style="color: var(--text-muted); font-size: 0.95rem;">+591 63722016</li>
+                    <li id="footer-address" style="color: var(--text-muted); font-size: 0.95rem;">Av. Potosi Nº 10,
+                        Uyuni Bolivia</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="turismo-container footer-bottom">
+            <p id="footer-copyright">&copy; 2026 Lamira Tours. Todos los derechos reservados.</p>
+            <a href="#"> <span id="footer-dev-info">Desarrollado por</span> <strong></strong></a>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script type="module" src="turismo-script.js"></script>
+
+</body>
+
+</html>

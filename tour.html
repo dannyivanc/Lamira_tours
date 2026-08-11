@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Tour | Lamira Tours</title>
+
+    <meta name="description"
+        content="Descubre todos los detalles, itinerarios y servicios incluidos para tu próxima aventura en Uyuni con Lamira Tours.">
+    <link rel="stylesheet" href="turismo-style.css">
+    <link rel="icon" href="./assets/images/logo.svg" type="image/x-icon">
+</head>
+
+<body class="turismo-template-body tour-detail-page">
+
+    <!-- Cabecera / Navbar -->
+    <header class="turismo-header scrolled">
+        <div class="turismo-container nav-container">
+            <a href="index.html" class="logo" id="main-logo">
+                <img src="./assets/images/logo.svg" class="logo_img" alt="Lamira Tours Logo">
+                Lamira Tours
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a id="nav-home" href="index.html" class="active">Inicio</a></li>
+                    <li><a id="nav-tours" href="index.html#destinos">Tours</a></li>
+                    <li><a id="nav-about" href="index.html#nosotros">Nosotros</a></li>
+                    <li><a id="nav-contact" href="contacto">Contactar</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <button id="lang-toggle" class="btn-secondary" style="margin-left:12px;">EN</button>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+    </header>
+
+    <!-- Contenedor de la Página de Detalles -->
+    <main class="tour-page-main">
+        <div class="turismo-container">
+            <!-- Botón Volver y Breadcrumb -->
+            <div class="tour-breadcrumb-wrap">
+                <a href="index.html#destinos" class="btn-back-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span id="tour-detail-back">Volver</span>
+                </a>
+            </div>
+
+            <!-- Contenedor del Tour (Estilo inmersivo) -->
+            <div class="tour-page-container" id="tour-detail-container">
+
+                <div class="tour-modal-banner" id="modal-tour-banner">
+                    <div class="tour-modal-banner-overlay"></div>
+                    <div class="tour-modal-banner-content">
+                        <h1 class="tour-modal-title" id="modal-tour-title">Cargando Tour...</h1>
+                    </div>
+                </div>
+
+                <!-- Contenedor del Cuerpo -->
+                <div class="tour-modal-body">
+                    <!-- Características Clave del Tour (Grid de 4 ítems) -->
+                    <div class="tour-features-grid">
+                        <div class="tour-feature-card">
+                            <div class="tour-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div class="tour-feature-info">
+                                <span id="tour-feature-duration-label" class="tour-feature-label">Duración</span>
+                                <span class="tour-feature-value" id="modal-tour-duration">-</span>
+                            </div>
+                        </div>
+                        <div class="tour-feature-card">
+                            <div class="tour-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M2 22a10 10 0 1 1 20 0Z" />
+                                    <path d="M9 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                                    <path d="M19 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    <path d="M16 18a6 6 0 0 0-6-6" />
+                                </svg>
+                            </div>
+                            <div class="tour-feature-info">
+                                <span id="tour-feature-type-label" class="tour-feature-label">Tipo de Tour</span>
+                                <span class="tour-feature-value" id="modal-tour-type">-</span>
+                            </div>
+                        </div>
+                        <div class="tour-feature-card">
+                            <div class="tour-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div class="tour-feature-info">
+                                <span id="tour-feature-group-size-label" class="tour-feature-label">Tamaño del
+                                    Grupo</span>
+                                <span class="tour-feature-value" id="modal-tour-group-size">-</span>
+                            </div>
+                        </div>
+                        <div class="tour-feature-card">
+                            <div class="tour-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div class="tour-feature-info">
+                                <span id="tour-feature-languages-label" class="tour-feature-label">Idiomas</span>
+                                <span class="tour-feature-value" id="modal-tour-languages">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diseño del Contenido en Dos Columnas -->
+                    <div class="tour-modal-content-layout">
+
+                        <!-- Columna Izquierda: Información de Itinerario y Detalles -->
+                        <div class="tour-modal-main-column">
+
+                            <!-- Descripción General -->
+                            <div class="tour-detail-section">
+                                <h3 id="tour-section-description-title" class="tour-section-title">Descripción
+                                    General</h3>
+                                <p class="tour-section-desc" id="modal-tour-overview">Cargando descripción...</p>
+                            </div>
+
+                            <!-- Recomendaciones -->
+                            <div class="tour-detail-section">
+                                <h3 id="tour-section-recommendations-title" class="tour-section-title">Recomendaciones
+                                </h3>
+                                <ul class="tour-bullet-list" id="modal-tour-recommendations">
+                                    <!-- Se llena dinámicamente -->
+                                </ul>
+                            </div>
+
+                            <!-- Incluye y Excluye (Dos Columnas) -->
+                            <div class="tour-detail-section tour-inc-exc-section">
+                                <div class="tour-inc-exc-col">
+                                    <h3 id="tour-section-included-title" class="tour-section-title">Servicios Incluidos
+                                    </h3>
+                                    <ul class="tour-inc-list" id="modal-tour-included">
+                                        <!-- Se llena dinámicamente -->
+                                    </ul>
+                                </div>
+                                <div class="tour-inc-exc-col">
+                                    <h3 id="tour-section-excluded-title" class="tour-section-title">No Incluido</h3>
+                                    <ul class="tour-exc-list" id="modal-tour-excluded">
+                                        <!-- Se llena dinámicamente -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Itinerario Detallado (Acordeones por día) -->
+                            <div class="tour-detail-section">
+                                <h3 id="tour-section-itinerary-title" class="tour-section-title">Itinerario Detallado
+                                </h3>
+                                <div class="tour-accordion-container" id="modal-tour-itinerary">
+                                    <!-- Se llena dinámicamente -->
+                                </div>
+                            </div>
+
+                            <!-- Preguntas Frecuentes (Acordeones) -->
+                            <div class="tour-detail-section">
+                                <h3 id="tour-section-faqs-title" class="tour-section-title">Preguntas Frecuentes</h3>
+                                <div class="tour-accordion-container" id="modal-tour-faqs">
+                                    <!-- Se llena dinámicamente -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Columna Derecha: Sidebar Sticky con Formulario e Info de Contacto -->
+                        <aside class="tour-modal-sidebar">
+                            <div class="tour-sidebar-card tour-booking-card">
+                                <h4 id="tour-booking-title" class="tour-sidebar-title">Reservar o Consultar</h4>
+                                <form id="tour-booking-form" class="tour-booking-form">
+                                    <input type="hidden" id="booking-tour-id" name="tour_id" value="">
+
+                                    <div class="form-group">
+                                        <label id="tour-booking-name" for="booking-name">Nombre Completo *</label>
+                                        <input type="text" id="booking-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="tour-booking-email" for="booking-email">Correo Electrónico *</label>
+                                        <input type="email" id="booking-email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="tour-booking-date" for="booking-date">Fecha de Viaje *</label>
+                                        <input type="date" id="booking-date" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="tour-booking-passengers" for="booking-passengers">Pasajeros
+                                            *</label>
+                                        <select id="booking-passengers" required>
+                                            <option value="" disabled selected><span
+                                                    id="booking-passenger-placeholder">Seleccione pasajeros</span>
+                                            </option>
+                                            <option id="passenger-1" value="1">1 Pasajero</option>
+                                            <option id="passenger-2" value="2">2 Pasajeros</option>
+                                            <option id="passenger-3" value="3">3 Pasajeros</option>
+                                            <option id="passenger-4" value="4">4 Pasajeros</option>
+                                            <option id="passenger-5" value="5">5 Pasajeros</option>
+                                            <option id="passenger-6" value="6">6 Pasajeros (Grupo Máximo)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="tour-booking-message" for="booking-message">Mensaje /
+                                            Requerimientos *</label>
+                                        <textarea id="booking-message" required placeholder=""></textarea>
+                                    </div>
+                                    <button id="tour-booking-submit" type="submit"
+                                        class="btn-premium btn-primary btn-block">Enviar
+                                        Consulta</button>
+                                </form>
+                            </div>
+
+                            <!-- Información de Contacto de la Agencia -->
+                            <div class="tour-sidebar-card tour-contact-card">
+                                <h4 id="tour-contact-title" class="tour-sidebar-title">Información de Contacto</h4>
+                                <ul class="tour-sidebar-contact-list">
+                                    <li>
+                                        <strong id="tour-contact-email">Email</strong>
+                                        <p id="tour-contact-email-link">lamiratoursoficial1@gmail.com</p>
+                                    </li>
+                                    <li>
+                                        <strong id="tour-contact-phone">Teléfono</strong>
+                                        <p id="tour-contact-phone-link">+591 63722016</p>
+                                    </li>
+                                    <li>
+                                        <strong id="tour-contact-address">Dirección</strong>
+                                        <p id="tour-contact-address-text">Av. Ferroviaria entre calle Sucre y
+                                            Camacho, Uyuni, Potosí, Bolivia</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- WHASA -->
+    <!-- boton de whasa -->
+    <a href="https://wa.me/59163722016?text=Hola%21%20me%20interesa%20el%20tour%20" class="whatsapp-float"
+        target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+
+        <!-- Tooltip -->
+        <span class="tooltip">¡Contactanos por WhatsApp!</span>
+
+        <!-- Icono SVG de WhatsApp -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+    <!-- Pie de Página -->
+
+    <footer class="turismo-footer">
+        <div class="turismo-container footer-grid">
+            <div class="footer-logo-desc">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" class="logo_img" alt="Lamira Tours Logo">
+                    Lamira Tours
+                </a>
+                <p id="footer-about">Creamos experiencias únicas diseñadas para convertir cada viaje en recuerdos
+                    inolvidables para toda
+                    la vida.</p>
+            </div>
+            <div class="footer-col">
+                <h4 id="footer-social-title">Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 id="footer-contact-title">Contactanos</h4>
+                <ul>
+                    <li style="color: var(--text-muted); font-size: 0.95rem;">lamiratoursoficial1@gmail.com</li>
+                    <li style="color: var(--text-muted); font-size: 0.95rem;">+591 63722016</li>
+                    <li id="footer-address" style="color: var(--text-muted); font-size: 0.95rem;">Av. Potosi Nº 10,
+                        Uyuni Bolivia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="turismo-container footer-bottom">
+            <p id="footer-copyright">&copy; 2026 Lamira Tours. Todos los derechos reservados.</p>
+            <a href="#"> <span id="footer-dev-info">Desarrollado por</span> <strong></strong></a>
+        </div>
+    </footer>
+
+    <!-- Lightbox de Galería Fotográfica (Slideshow) -->
+    <div id="tour-lightbox" class="tour-lightbox-overlay">
+        <button class="tour-lightbox-close" aria-label="Cerrar galería">&times;</button>
+        <button class="tour-lightbox-arrow prev" aria-label="Anterior">&lt;</button>
+        <div class="tour-lightbox-content">
+            <img id="tour-lightbox-img" src="" alt="Galería de fotos del Salar">
+            <span class="tour-lightbox-caption" id="tour-lightbox-caption"></span>
+        </div>
+        <button class="tour-lightbox-arrow next" aria-label="Siguiente">&gt;</button>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="turismo-script.js"></script>
+</body>
+
+</html>
